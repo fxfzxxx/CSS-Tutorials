@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>网易新闻列表</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../reset.css">
+        <style>
+            body{
+                background-color:#bfa;
+            }
+            a{
+                text-decoration: none;
+            }
+            
+            .thumbnail-news{
+                width: 300px;
+                height: 358px;
+                margin: 50px auto;
+                background-color: #fff;
+                border-top: 1px solid #ddd;
+            }
+            .thumbnail-title{
+                display: inline-block;
+                height: 30px;
+                border-top: 1px solid red;
+                margin-top: -1px;
+                padding-top: 10px;
+            }
+            .thumbnail-title a{
+
+                color: #40406B;
+                font-weight: bold;
+            }
+            .thumbnail-image{
+                height: 150px;
+            }
+            .thumbnail-image .thumbnail-image-title{
+                color: #fff;
+                margin-top: -30px;
+                font-weight: bold;
+                padding-left: 20px;
+            }
+            .thumbnail-list{
+                margin-top: 20px;
+                /* padding-left: 14px; */
+            }
+            .thumbnail-list li{
+                margin-bottom: 17px;
+            }
+            .thumbnail-list li::before{
+                content:"■ ";
+                font-size: 12px;
+                color: #afafaf;
+                height: 10px;
+                padding-bottom: 3px;
+                margin-right: 6px;
+            }
+            .thumbnail-list li a{
+                color:#666;
+                font-size: 14px;
+            }
+            .thumbnail-list li a:hover{
+                color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <div class="thumbnail-news">
+            <h2 class="thumbnail-title">
+                <a href="javascript;:">新闻</a>
+            </h2>
+            <div class="thumbnail-image">
+                <a href="#">
+                <img src="https://cms-bucket.ws.126.net/2021/0207/7a2713f8p00qo5b850038c0008c005kc.png?imageView&thumbnail=300y150&type=webp" alt="新闻图片">
+                <h3 class="thumbnail-image-title">
+                    费德勒首负迪米 扶额摇头不满发挥                   
+                </h3>
+                </a>
+            </div>
+            <ul class ="thumbnail-list">
+                <li><a href="">美国的新冠疫苗究竟有什么特别之处？</a></li>
+                <li><a href="">中国第二款新冠疫苗上市 怎样安全取快</a></li>
+                <li><a href="">火药味十足 2020车圈激情互怼实录</a></li>
+                <li><a href="">咖啡有何神奇之处 葡萄干降低龋齿风</a></li>
+
+            </ul>
+        </div>
+        
+        <script src="" async defer></script>
+    </body>
+</html>

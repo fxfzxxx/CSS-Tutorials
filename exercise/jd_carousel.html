@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../reset.css" />
+    <style>
+      a {
+        text-decoration: none;
+      }
+      .clearfix::before .clearfix::after {
+        display: table;
+        clear: both;
+        content: "";
+      }
+      .carousel {
+        /* position: relative;
+                left: auto;
+                right: auto; */
+        border: 20px solid red;
+        width: 586px;
+        height: 590px;
+        margin: 50px auto;
+        position: relative;
+      }
+
+      .carousel-item1 img {
+        height: 586px;
+        z-index: 1;
+        position: absolute;
+      }
+
+      .carousel-item2 img {
+        height: 586px;
+        z-index: 2;
+        position: absolute;
+      }
+
+      .carousel-item3 img {
+        /* width:738px; */
+        height: 586px;
+        z-index: 3;
+        position: absolute;
+      }
+      .carousel-nav {
+        width: 145px;
+        height: 15px;
+        position: absolute;
+        z-index: 5;
+        left: 37px;
+        bottom: 25px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="carousel clearfix">
+      <a href="#">
+        <div class="carousel-item1">
+          <img src="../images/carousel1.webp" alt="" />
+        </div>
+      </a>
+      <a href="#">
+        <div class="carousel-item2">
+          <img src="../images/carousel2.webp" alt="" />
+        </div>
+      </a>
+      <a href="#">
+        <div class="carousel-item3">
+          <img src="../images/carousel3.webp" alt="" />
+        </div>
+      </a>
+      <div class="carousel-nav">
+        <span class="nav1"><a href="#">●</a></span>
+        <span class="nav2"><a href="#">●</a></span>
+        <span class="nav3"><a href="#">●</a></span>
+        <span class="nav4"><a href="#">●</a></span>
+      </div>
+    </div>
+
+    <script src="" async defer></script>
+  </body>
+</html>

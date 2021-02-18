@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="demo.css" />
+    <style>
+        .box1{
+            
+            width: 200px;
+            height: 200px;
+            background-color: #bfa;
+            float: left;
+        }
+        .box2{
+            
+            width: 250px;
+            height: 250px;
+            background-color:yellow;
+            float: left; 
+        }
+        .inner{
+            height: 100%;
+            width: 100%;
+            background-color: yellow;
+        }
+        p::first-letter{
+            font-size:50px;
+        }
+
+        span::before{
+            content: "▣"
+        } 
+        span::after{
+            content: "▣"
+        }
+        ul>li:nth-child(odd){
+            color: orange;
+        }
+        a:link {
+            color: orange;
+        }
+        a:visited{
+            color: red;
+        }
+        a:active{
+            color: green;
+        }
+        a:hover{
+            font-size: larger;
+        }
+        
+    </style>
+  </head>
+
+  <body>
+    <!--[if lt IE 7]>
+      <p class="browsehappy">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="#">upgrade your browser</a> to improve your experience.
+      </p>
+    <![endif]-->
+    <p style="color: brown; font-size: 30px">"We have received the money."</p>
+    <p> 
+        <span>人人网完了.</span>
+        <br></br>
+        <span title="span">人人网完了.</span>
+        <ul>
+            <li>第一个</li>
+            <li>第二个</li>
+            <li>第三个</li>
+            <li><a href=http://baidu.com>第四个</a></li>
+        </ul>
+    </p>
+    <div class="box1">
+
+    </div>
+    <div class="box2"></div>
+    <script src="" async defer></script>
+
+  </body>
+</html>
