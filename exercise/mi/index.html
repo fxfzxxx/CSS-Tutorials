@@ -14,6 +14,7 @@
         <link rel="stylesheet" href="./fas/css/all.css">
         <link rel="stylesheet" href="./css/index.css">
         <link rel="stylesheet" href="./css/base.css">
+        <link rel="icon" href="//s01.mifile.cn/favicon.ico" type="image/x-icon" />
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -85,7 +86,7 @@
         <div class="head-wrapper">
             <!-- 头部导航 -->
             <div class="head w clearfix">
-                <!-- 头部logo显示 -->
+                <!-- 头部logo容器 -->
                 <div class="logo" title='Xiaomi'>                   
                     <div class="home">
                         <a href="/"></a>
@@ -98,7 +99,61 @@
                 <!-- 头部导航条容器 -->
                 <div class="navbar-wrapper">
                     <ul class="navbar">
-                        <li><a class="more-products all-products" href="#">全部商品分类</a></li>
+                        <li class="left-menu-wrapper">
+                            <a class="more-products all-products" href="#">全部商品分类</a>
+                            <ul class='left-menu'>
+                                <li>
+                                    <a href="#">
+                                        手机 电话卡 <em class="fas fa-angle-right"></em>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                       电视 盒子 <em class="fas fa-angle-right"></em>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        笔记本 平板 <em class="fas fa-angle-right"></em>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        家电 插线板 <em class="fas fa-angle-right"></em>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        出行 穿戴 <em class="fas fa-angle-right"></em>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        智能 路由器 <em class="fas fa-angle-right"></em>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        电源 配件 <em class="fas fa-angle-right"></em>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        健康 儿童 <em class="fas fa-angle-right"></em>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        耳机 音响 <em class="fas fa-angle-right"></em>
+                                    </a>
+                                </li>  
+                                <li>
+                                    <a href="#">
+                                        生活 箱包 <em class="fas fa-angle-right"></em>
+                                    </a>
+                                </li> 
+                            </ul>
+                        </li>
                         <li class="more-products"><a  href="#">小米手机</a></li>
                         <li class="more-products"><a href="#">Redmi 红米</a></li>
                         <li class="more-products"><a href="#">电视</a></li>
@@ -109,13 +164,57 @@
                         <li><a href="#">服务</a></li>
                         <li><a href="#">社区</a></li>
 
-                        <div class="products-info">
-                            
+                        <div class="products-info">                          
                         </div>
                     </ul>
                 </div>
+                <!-- 头部搜索框容器 -->
+                <div class="search-box-wrapper">
+                    <form class="search-box" action="#">
+                        <input class="search-input" type="text"search" name="index-search" placeholder="家电"/>
+                        <button class="search-button">
+                            <em class="fas fa-search"></em>
+                        </button>
+                    </form>
+                    
+                </div>
+
             </div>
         </div>
+        <!-- banner容器 -->
+        <div class="banner-wrapper clearfix">
+            <div class="banner w">
+                <!-- 轮播图 -->
+                <ul class="image-list">
+                    <li><img src="./img/banner1.jpg" alt=""></li>
+                    <li><img src="./img/banner2.jpg" alt=""></li>
+                    <li><img src="./img/banner3.jpg" alt=""></li>
+                    <li><img src="./img/banner4.jpg" alt=""></li>
+                    <li><img src="./img/banner5.jpg" alt=""></li>
+                </ul>
+                <!-- <ul class="pointer">
+                    <li><a href="javascript:;"></a></li>
+                    <li><a href="javascript:;"></a></li>
+                    <li><a href="javascript:;"></a></li>
+                    <li><a href="javascript:;"></a></li>
+                    <li><a href="javascript:;"></a></li> 
+                </ul> -->
+                <!-- 轮播图右下角选择 -->
+                <div class="pointer">
+                    <a class="active" href="javascript:;"></a>
+                    <a href="javascript:;"></a>
+                    <a href="javascript:;"></a>
+                    <a href="javascript:;"></a>
+                    <a href="javascript:;"></a>
+                </div>
+                <div class="mover">
+                    <div><a class="left" href="javascript:;"></a></div>
+                    <div><a class="right" href="javascript:;"></a></div>
+                </div>
+            </div>
+        </div>
+        <!-- 右侧固定工具栏 -->
+        <div class="right-menu"></div>
         <script src="" async defer></script>
     </body>
 </html>

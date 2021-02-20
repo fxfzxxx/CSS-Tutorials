@@ -50,9 +50,12 @@ li:hover>.app::after{
     line-height:1;
     text-align: center;
     box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    background-color: white;
     position: absolute;
     transition: height 0.8s;
+    z-index: 9999;
 }
+/* 顶部二维码下拉框 */
 .app:hover .qrcode{
     /* .app:hover::after 可以直接出 上面的after里display为none */
     /* display:block; */
@@ -74,7 +77,8 @@ li:hover>.app::after{
 }
 .shop-cart:hover .items{
     display: block;
-    height: 100px
+    height: 100px;
+    /* z-index: 9999; */
 }
 .shop-cart a{
     display: block;
@@ -88,12 +92,14 @@ li:hover>.app::after{
     overflow: hidden;
     width: 320px;
     height:0;
+    background-color: white;
     box-shadow: 0 5px 5px rgba(0,0,0,0.2);
     position: absolute;
     text-align: center;
     vertical-align: center;
     right:0px;
     transition: height 0.8s;
+    z-index: 9999;
 }
 .items span{
     display: block;
@@ -202,8 +208,9 @@ a.all-products{
     top:100px;
     left: 0;
     transition: height 0.8s;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.2);
     /* float: left; */
-    z-index: 9999;
+    z-index: 9998;
 }
 /* 设置 鼠标移入 头部导航栏的下拉框 注意兄弟选择器 波浪号是兄弟就行 加号是必须相邻 */
  .more-products:hover ~.products-info,
@@ -212,4 +219,162 @@ a.all-products{
     height:228px;
     box-shadow: 0 10px 10px rgba(0,0,0,0.2);
     border-top: 1px solid #b0b0b0;
+}
+
+.head .search-box-wrapper {
+    float: right;
+    width: 296px;
+    height: 50px;
+    margin-top: 25px;
+    border: 1px solid rgb(224,224, 224);
+}
+.search-box .search-button {
+    float: left;
+    height: 50px;
+    width: 52px;
+    padding:0;
+    border: none;
+    border-left: 1px solid rgb(224,224, 224);
+    color: #616161;
+    font-size:18px;
+}
+.search-box .search-input{
+    float: left;
+    height: 50px;
+    width: 234px;
+    padding: 0;
+    padding-left: 10px;
+    border:none;
+    font-size: 14px;
+    outline: none;
+}
+
+.search-box .search-input:focus{
+    outline:1px solid #ff6700;
+}
+.search-box .search-button:hover{
+    background-color:#ff6700;
+    color:white;
+    border-left: #FF6700;
+    outline:#FF6700;
+
+}
+.search-box .search-input:focus+.search-button{
+    outline:1px solid #ff6700;
+    /* border-left: 1px solid #efefef; */
+}
+.left-menu-wrapper{
+    position: relative;
+}
+.navbar .left-menu{
+    /* float: left; */
+    height: 420px;
+    width: 234px;
+    padding:20px 0;
+    position:absolute;
+    /* top: -1px; */
+    left:-118px;
+    background-color: rgba(105,101,101,.6);
+    z-index: 999;
+}
+
+.left-menu li{
+    /* float: left; */
+    
+    
+
+    /* display: block; */
+}
+.left-menu a{
+    width: 204px;
+    height: 42px;
+    line-height:42px;
+    color: white;
+    font-size:14px;
+    padding-left:30px;
+    padding-right: 0;
+}
+.left-menu a:hover{
+    background-color:#ff6700;
+    color:white;
+}
+.left-menu em{
+    font-size: 18px;
+    float:right;
+    height: 42px;
+    line-height:42px;
+    margin-right: 20px;
+}
+.banner-wrapper{
+    margin-top:1px;
+    
+}
+.banner{
+    position: relative;
+    height: 460px;
+}
+.banner li{
+    position:absolute;
+}
+.banner img{
+    /* width: 1226px; */
+    width: 100%;
+}
+/* 轮播图的点 */
+.pointer{
+    bottom: 22px;
+    right: 35px;
+    position:absolute;
+    
+}
+.pointer a{
+    height: 6px;
+    width: 6px;
+    margin-left: 6px;
+    border:2px solid rgba(255, 255, 255,0.4);
+    border-radius: 50%;
+    float: left;
+    background-color: rgba(0,0,0,0.4);
+
+}
+.pointer a:hover,
+.pointer a.active{
+    background-color: rgba(255, 255, 255,0.4);
+    border:2px solid rgba(0,0,0,0.4);
+}
+/* 轮播图上控制左右的按钮 */
+.mover a{
+    width: 41px;
+    height: 69px;
+    position:absolute;
+    background-image: url(../img/icon-slides.png);
+    bottom: 0;
+    top: 0;
+    margin:auto 0;
+}
+.mover .left{
+    left: 234px;
+    background-position: -84px 0;
+}
+.mover .right{
+    right: 0;
+    background-position: -125px 0;
+}
+.mover .left:hover{
+    background-position:0;
+}
+.mover .right:hover{
+    background-position:-42px 0;
+}
+/* 右侧工具栏 */
+.right-menu{
+    width: 26px;
+    height: 286px;
+    background-color: #ff6700;
+    position:fixed;
+    bottom: 60px;
+    left: 50%; 
+    margin-left: 613px;
+
+    
 }
