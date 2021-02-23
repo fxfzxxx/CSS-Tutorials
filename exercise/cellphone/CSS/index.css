@@ -1,0 +1,57 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+html {
+  background-color: #eff0f4;
+}
+a {
+  text-decoration: none;
+}
+.w,
+.topbar,
+.banner,
+.grid-menu {
+  width: 92.4vw;
+  margin: 0 auto;
+}
+.topbar {
+  display: flex;
+  height: 23.33333333vw;
+  justify-content: space-between;
+  align-items: center;
+}
+.topbar a {
+  color: #24253d;
+  font-size: 20px;
+}
+.topbar em {
+  color: #999999;
+}
+.banner a {
+  display: block;
+  height: 36.93333333vw;
+}
+.banner img {
+  width: 100%;
+}
+.grid-menu {
+  height: 43.6vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-evenly;
+  text-align: left;
+  line-height: 13.73333333vw;
+}
+.grid-menu a {
+  display: block;
+  border-radius: 5.33333333px;
+  background-image: linear-gradient(to left, #c657ff 50%, #d483fd);
+  color: white;
+  width: 43.6vw;
+  height: 13.73333333vw;
+}
+.grid-menu a span {
+  margin-left: 10%;
+}

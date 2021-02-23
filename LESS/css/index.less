@@ -1,0 +1,85 @@
+@import "test.less";// 模块化 分别开发 变量 变形 等
+
+body{
+    width: 1000px;
+    height: 1000px;
+}
+// 声明变量
+@a:220px;
+@b:#bfa;
+@c:box3;
+// 变量选择
+.box5{
+    width: @a;
+    background-color: @b;
+
+}
+// 类选择
+.@{c}{
+    width: @a;
+    //属性选择
+    height: $width;
+}
+
+.box1{
+
+    .box2{
+        color:red;
+    }
+    >.box3{
+        color:red;
+    }
+    // &表示外侧的父元素
+    &:hover{
+        color:green;
+    }
+    &{width: 100px;}
+}
+// 继承
+.p1{
+width: 100px;
+height: 100px;
+
+}
+.p2:extend(.p1){
+    color:red;
+}
+// mixin 
+.box2{
+    color:red;
+}
+.box1{
+    .box2()//注意与嵌套的区别是括号
+}
+// 可以直接创建一个mixin类 类名后加括号
+.box3(){
+    color: #000;
+}
+.box-bc(){
+    background-color: #fff;
+}
+.box5{
+    .box2();
+    .box-bc;
+    .box3
+}
+// 继承与mixin的区别是继承生成的css,各类之间是逗号,mixin则是分开的类
+
+// 混合函数 mixin function 
+.wFunction(@w,@h){
+    width: @w;
+    height: @h;
+}
+
+.box6{
+    .wFunction(200px,300px)
+}
+// 自带函数
+.box7{
+    color: average(red,black);
+    background-color:darken(#bfa,20%)
+}
+.box8{
+    height: 200px+200px;
+    width: 200px-20px;
+}

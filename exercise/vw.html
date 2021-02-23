@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <style>
+            *{
+                margin:0;
+                padding: 0;
+            }
+            /* 利用全局字体大小来适配 */
+            /* 设计图750px 一共100vw/
+            /* 设计图按钮宽度50px 转换为vw为 50/750 *100 */
+            /* 100/750 = 0.1333333vw=1px 在知道其他元素宽度后成 这个数会不方便 每次都得输入算一遍 */
+            /* 解决办法为设置全局字体大小 */
+            /* 但 浏览器最小字体是12px 所以需要用倍数来解决 比如100倍 0.133333*100 = 13.3333vw*/
+            /* 1 rem = 13.3333vw = 100px */
+            /* 设计图中50px 对应 50/100 = 0.5 rem */
+            html{
+                font-size: 13.3333vw;
+
+            }
+            .box1{
+                width: 0.5rem;
+            }
+        </style>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <div class="box1">
+
+        </div>
+        <script src="" async defer></script>
+    </body>
+</html>

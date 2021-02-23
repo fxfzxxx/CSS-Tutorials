@@ -1,0 +1,57 @@
+body {
+  width: 1000px;
+  height: 1000px;
+}
+.box5 {
+  width: 220px;
+  background-color: #bfa;
+}
+.box3 {
+  width: 220px;
+  height: 220px;
+}
+.box1 {
+  width: 100px;
+}
+.box1 .box2 {
+  color: red;
+}
+.box1 > .box3 {
+  color: red;
+}
+.box1:hover {
+  color: green;
+}
+.p1,
+.p2 {
+  width: 100px;
+  height: 100px;
+}
+.p2 {
+  color: red;
+}
+.box2 {
+  color: red;
+}
+.box1 {
+  color: red;
+}
+.box5 {
+  color: red;
+  background-color: #fff;
+  width: 220px;
+  height: 220px;
+  color: #000;
+}
+.box6 {
+  width: 200px;
+  height: 300px;
+}
+.box7 {
+  color: #800000;
+  background-color: #69ff44;
+}
+.box8 {
+  height: 400px;
+  width: 180px;
+}
